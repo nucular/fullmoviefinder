@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" ng-app="fullmoviefinder">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>ng-thing</title>
+
+  <link rel="stylesheet" 
+        type="text/css" 
+        href="bower_components/Skeleton/css/normalize.css" />
+  <link rel="stylesheet" 
+        type="text/css" 
+        href="bower_components/Skeleton/css/skeleton.css" />
+
+  <link rel="stylesheet"
+        type="text/css"
+        href="src/main.css" />
+
+  <!--[if lt IE 9]>
+    <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+
+<body>
+  <header class="container">
+    <h1>fullmoviefinder&trade;</h1>
+  </header>
+
+
+  <main id="main" class="container" ui-view></main>
+
+  <footer class="container">
+    (c) somebody 2014
+  </footer>
+
+
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <!-- <script src="bower_components/underscore/underscore.min.js"></script> -->
+  <script src="src/main.js"></script>
+</body>
+</html>
