@@ -3,5 +3,9 @@
   <reddit-post 
           ng-repeat="result in results"
           title="{{result.title}}" 
-          href="{{result.href}}"></reddit-post>
+          url="{{result.url}}"
+          author="{{result.author}}"
+          nsfw="{{result.over_18}}"
+          votes="{{result.score}}"
+          subreddit="{{result.subreddit}}"></reddit-post>
 </div>
