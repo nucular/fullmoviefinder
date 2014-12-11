@@ -1,0 +1,86 @@
+This is what the responded "entry" object looks like when the data comes back 
+from `redditSearch.resultsForSubreddit`.
+
+{ 
+    $$hashKey: "object:4",
+    approved_by: null,
+    author: "what-a-doric",
+    author_flair_css_class: null,
+    author_flair_text: null,
+    banned_by: null,
+    clicked: false,
+    created: 1402145125,
+    created_utc: 1402141525,
+    distinguished: null,
+    domain: "youtube.com",
+    downs: 0,
+    edited: false,
+    gilded: 0,
+    hidden: false,
+    id: "27jk3z",
+    is_self: false,
+    likes: null,
+    link_flair_css_class: "reg",
+    link_flair_text: "Action | Adventure | Drama | Romance | Thriller",
+    
+    media: {
+      oembed: {
+        description: "(My Favorite Movie) A young man, falsely imprisoned by \
+                      his jealous "friends," escapes and uses a hidden treasure\
+                       to exact his revenge. Stars: Jim Caviezel, Guy Pearce, \
+                      Richard Harris, James Frain, Luis Guzmán and Dagmara \
+                      Dominczyk. Directed by: Kevin Reynolds",
+        height: 338,
+        html: "<iframe class="embedly-embed" 
+                       src="//cdn.embedly.com/widgets/media.html?src=http%3A%2F%2Fwww.youtube.com%2Fembed%2FQxdY1CwBzSM&amp;url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DQxdY1CwBzSM&amp;image=http%3A%2F%2Fi.ytimg.com%2Fvi%2FQxdY1CwBzSM%2Fhqdefault.jpg&amp;key=2aa3c4d5f3de4f5b9120b660ad850dc9&amp;type=text%2Fhtml&amp;schema=youtube" 
+                       width="600" 
+                       height="338" 
+                       scrolling="no" 
+                       frameborder="0" 
+                       allowfullscreen></iframe>"
+
+        provider_name: "YouTube"
+        provider_url: "http://youtube.com"
+        thumbnail_height: 360
+        thumbnail_url: "http://i.ytimg.com/vi/QxdY1CwBzSM/hqdefault.jpg"
+        thumbnail_width: 480
+        title: "The Count Of Monte Cristo 2002 (Full Movie)"
+        type: "video"
+        url: "http://www.youtube.com/watch?v=QxdY1CwBzSM"
+        version: "1.0"
+        width: 600       
+      },
+      type: "youtube.com"
+    }
+
+    media_embed: {...},
+
+    mod_reports: [...],
+
+    name: "t3_27jk3z",
+
+    num_comments: 25,
+    num_reports: null,
+
+    over_18: false,
+
+    permalink: "/r/fullmoviesonyoutube/comments/27jk3z/count_of_monte_cristo_2002340p/",
+
+    report_reasons: null,
+    saved: false,
+    score: 238,
+    secure_media: Object,
+    secure_media_embed: Object,
+    selftext: "",
+    selftext_html: null,
+    stickied: false,
+    subreddit: "fullmoviesonyoutube",
+    subreddit_id: "t5_2vlad",
+    thumbnail: "http://a.thumbs.redditmedia.com/HOXHXkxP9TR_7n56.jpg",
+    title: "Count Of Monte Cristo (2002)[340p]",
+    ups: 238,
+    url: "https://www.youtube.com/watch?v=QxdY1CwBzSM",
+    user_reports: Array[0],
+    visited: false
+}
+
