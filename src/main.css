@@ -1,7 +1,115 @@
-body {}
+body {
+  background: white;
+  color: black;
+}
+
+body > .container {
+  width: 100%;
+}
+
+@media (min-width: 480px) {
+  body > .container {
+    width: 50%;
+  }
+}
+
+header {
+  margin: 5%;
+}
+
+header h1 {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
 reddit-post h3 {
   text-decoration: none;
   font-size: 1.8rem;
 }
 
+search-box input {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  background: white;
+  color: black;
+  border: 1px solid #FF00FF;
+  padding: 6px;
+}
+
+search-box input.ng-pristine {
+  border-color: #999;
+}
+
+search-box input.ng-dirty {
+  border-color: #000;
+}
+
+search-box button {
+  display: block;
+  width: 100%;
+  padding: 6px;
+  margin: 6px auto;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+search-box button.disabled {
+  background-color: black;
+  color: white;
+  cursor: default;
+}
+
+.spinner {
+  height: 5px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.spinner i {
+  display: block;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: -25%;
+  background-color: black;
+  -webkit-animation: 2s spinner infinite cubic-bezier(0.52, 0, 0.48, 1);
+  animation: 2s spinner infinite cubic-bezier(0.52, 0, 0.48, 1);
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    left: -100%;
+  }
+
+  50% {
+    left: 0%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes spinner {
+  0% {
+    left: -100%;
+  }
+
+  50% {
+    left: 0%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+/*# sourceMappingURL=intermediate.css.map */
