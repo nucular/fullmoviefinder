@@ -14,7 +14,11 @@ angular.module('fullmoviefinder')
   var SEARCH = "/search.json";
 
   obj.find_in = [
-    "/r/FullMoviesOnYoutube"
+    "/r/FullMoviesOnYoutube",
+    "/r/FullMovieOnViooz",
+    "/r/FullMoviesDailyMotion",
+    "/r/FullMoviesOnSockshare",
+    "/r/FullMoviesOnVimeo"
     // add more
   ];
 
