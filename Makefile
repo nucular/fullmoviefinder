@@ -17,4 +17,4 @@ src/main.css: src/intermediate.css
 	myth src/intermediate.css src/main.css
 
 src/intermediate.css: src/main.scss
-	sass src/main.css src/intermediate.css --no-cache
+	sass src/main.scss src/intermediate.css --no-cache
