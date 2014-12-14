@@ -1,31 +1,3 @@
-<h2>/home</h2>
-
-<section>
-  look! a reddit box!
-  <reddit-post title="Ice driven through a fence" 
-               href="http://i.imgur.com/lJSuUIr.jpg"></reddit-post>
-</section>
-
-<section>
-  also the search box!
-  <search-box></search-box>
-</section>
-
-<section>
-  here's what you typed: {{movie}}
-</section>
-
-<section>
-  here's what the search results look like for the term:
-  <h2>/results</h2>
-  <div id="results">
-    <reddit-post 
-          ng-repeat="result in results"
-          title="{{result.title}}" 
-          url="{{result.url}}"
-          author="{{result.author}}"
-          nsfw="{{result.over_18}}"
-          votes="{{result.score}}"
-          subreddit="{{result.subreddit}}"></reddit-post>
-  </div>
-</section>
+<search-box id="searchBox"></search-box>
+<div class="spinner" ng-show="loading"><i></i></div>
+<search-results></search-results>
