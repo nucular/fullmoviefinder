@@ -1,0 +1,113 @@
+//
+// sass main.scss intermediate.css --no-cache & myth intermediate.css main.css
+
+$bg: white;
+$fg: black;
+
+body {
+  background: $bg;
+  color: $fg;
+}
+
+body > .container {
+  width: 100%;
+
+  @media (min-width: 480px) {
+    width: 50%;
+  }
+}
+
+header {
+  margin: 5%;
+  h1 {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+
+    user-select: none;
+  }
+}
+
+reddit-post {
+  h3 {
+    text-decoration: none;
+    font-size: 1.8rem;
+  }
+}
+
+search-box {
+  input {
+
+    display: block;    
+    width: 100%;
+    margin: 0 auto;
+    background: $bg;
+
+    color: $fg;
+  
+    border: 1px solid #FF00FF;
+    padding: 6px;
+
+    &.ng-pristine {
+      border-color: #999;
+    }
+
+    &.ng-dirty {
+      border-color: #000;
+    }
+  }
+
+  button {
+  
+    display: block;
+    
+    width: 100%;
+
+    padding: 6px;
+    margin: 6px auto;
+
+    background-color: $bg;
+    color: $fg;
+
+    border: 1px solid $fg;
+      
+
+    &.disabled {
+      background-color: $fg;
+      color: $bg;
+      cursor: default;
+    }
+  }
+}
+
+.spinner {
+  height: 5px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.spinner i {
+  display: block;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: -25%;
+  background-color: $fg;
+
+  animation: 2s spinner infinite cubic-bezier(0.52,0,0.48,1);
+}
+
+@keyframes spinner {
+  0% {
+    left: -100%;
+  }
+
+  50% {
+    left: 0%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
