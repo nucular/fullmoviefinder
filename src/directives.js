@@ -20,3 +20,10 @@ app.directive('searchBox', [ function() {
     templateUrl: 'partials/search-box.partial.html'
   };
 }]);
+
+app.directive('searchResults', [ function() {
+  return {
+    restrict: 'E',
+    templateUrl: 'partials/search-results.partial.html'
+  };
+}]);
