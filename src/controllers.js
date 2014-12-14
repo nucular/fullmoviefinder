@@ -5,10 +5,11 @@ app.controller('SearchCtrl', ['$scope','redditSearch','$stateParams',
                            function($scope, redditSearch, $stateParams) {
 
   $scope.update = function(movie) {
+    $scope.loading = true;
     console.log('[SearchCtrl#update] calling search update');
     var promise = redditSearch.resultsForMovie(movie);
     promise.then(function(results) {
-    
+      $scope.loading = false;
       $scope.results = _.flatten(results);
 
       console.log('[SearchCtrl#update] results are in: ', $scope.results);
