@@ -1,4 +1,21 @@
-<div class="form">
-  <input type="text" ng-model="movie">
-  <button class="submit primary" ng-click="update(movie)">Submit</button>
-</div>
+<form class="form" novalidate>
+  <label 
+    style="display: none" 
+    for="movie_name">
+    Enter the name of the movie you're looking for:</label>
+
+  <input 
+    class="form_control"
+    name="movie_name" 
+    type="text" 
+    ng-model="movie"
+    placeholder="Pick a movie. Any movie."
+    required
+    ng-minlength="2">
+  
+  <button 
+    class="submit primary" 
+    ng-submit="update(movie)"
+    ng-click="update(movie)">
+    Submit</button>
+</form>
