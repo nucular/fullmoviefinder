@@ -29,21 +29,18 @@
 
 
 <body>
-  <header class="container">
-    <h1>fullmoviefinder&trade;</h1>
-  </header>
+  <div class="container">
+    <header>
+      <h1>full<strong>movie</strong>finder</h1>
+    </header>
 
-
-  <main id="main" class="container" ui-view></main>
-
-  <footer class="container">
-    (c) somebody 2014
-  </footer>
-
+    <main id="main" ui-view><div class="spinner"><i></i></div></main>    
+  </div>
 
   <script src="bower_components/angular/angular.min.js"></script>
   <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
   <script src="bower_components/underscore/underscore-min.js"></script>
+
   <script src="src/main.js"></script>
   <script src="src/services.js"></script>
   <script src="src/controllers.js"></script>
