@@ -8,4 +8,5 @@ git add src/main.css
 [ -d "bower_components" ] || bower install
 git add bower_components
 git commit -m "Build"
+git push origin gh-pages
 git checkout -f master
