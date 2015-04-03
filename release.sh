@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # bash release.bat
 set -e
-git branch gh-pages origin/gh-pages ||
+git branch gh-pages origin/gh-pages || :
 git checkout gh-pages
 git merge master
 make src/main.css
