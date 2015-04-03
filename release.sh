@@ -2,7 +2,7 @@
 # bash release.bat
 set -e
 git checkout gh-pages
-git rebase master
+git merge master
 make src/main.css
 git add src/main.css
 [ -d "bower_components" ] || bower install
